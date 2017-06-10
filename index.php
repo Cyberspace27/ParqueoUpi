@@ -355,6 +355,7 @@ var LS_Meta = {"v":"5.6.5"};
 <li id="nav-menu-item-22838" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="http://www.upi.ac.cr/campus/" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Campus</span><span class="plus"></span></a></li>
 <li id="nav-menu-item-22060" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="http://www.upi.ac.cr/vida-estudiantil/" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Vida Estudiantil</span><span class="plus"></span></a></li>
 <li id="nav-menu-item-22095" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a target="_blank" href="http://nabu.cr/upolitecnica/" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Test Vocacional</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-22104" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="parqueoUPI.php" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Parqueo UPI</span><span class="plus"></span></a></li>
 <li id="nav-menu-item-22104" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="http://www.upi.ac.cr/contactenos/" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Contáctenos</span><span class="plus"></span></a></li>
 </ul>									</nav>
 									<div class="header_inner_right">
