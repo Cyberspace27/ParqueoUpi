@@ -5,6 +5,54 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>Parqueo UPI</title>
 
+<!--Aqui esta el inicio del codigo que pegue de ultimo-->
+<link rel='stylesheet' id='ai1ec_style-css'  href='//www.upi.ac.cr/wp-content/plugins/all-in-one-event-calendar/public/themes-ai1ec/vortex/css/ai1ec_parsed_css.css?ver=2.5.19' type='text/css' media='all' />
+<link rel='stylesheet' id='validate-engine-css-css'  href='http://www.upi.ac.cr/wp-content/plugins/wysija-newsletters/css/validationEngine.jquery.css?ver=2.7.10' type='text/css' media='all' />
+<link rel='stylesheet' id='layerslider-css'  href='http://www.upi.ac.cr/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.6.5' type='text/css' media='all' />
+<link rel='stylesheet' id='ls-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='ditty-news-ticker-font-css'  href='http://www.upi.ac.cr/wp-content/plugins/ditty-news-ticker/assets/fontastic/styles.css?ver=2.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='ditty-news-ticker-css'  href='http://www.upi.ac.cr/wp-content/plugins/ditty-news-ticker/assets/css/style.css?ver=2.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://www.upi.ac.cr/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.4.1' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='qode_default_style-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/style.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_stylesheet-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/stylesheet.min.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_style_dynamic-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/style_dynamic.css?ver=1479838562' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_font-awesome-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/font-awesome/css/font-awesome.min.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_elegant-icons-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/elegant-icons/style.min.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_linear-icons-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/linear-icons/style.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css'  href='http://www.upi.ac.cr/wp-includes/js/mediaelement/mediaelementplayer.min.css?ver=2.22.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://www.upi.ac.cr/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_responsive-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/responsive.min.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_style_dynamic_responsive-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/style_dynamic_responsive.css?ver=1479838562' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='http://www.upi.ac.cr/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=4.11.2' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_custom_css-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/custom_css.css?ver=1479838562' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_webkit-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/webkit_stylesheet.css?ver=4.7.5' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.upi.ac.cr/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.8'></script>
+<script type='text/javascript' src='http://www.upi.ac.cr/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.upi.ac.cr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LS_Meta = {"v":"5.6.5"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.upi.ac.cr/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.6.5'></script>
+<script type='text/javascript' src='http://www.upi.ac.cr/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.6.5'></script>
+<script type='text/javascript' src='http://www.upi.ac.cr/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.4.1'></script>
+<script type='text/javascript' src='http://www.upi.ac.cr/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.4.1'></script>
+<link rel='https://api.w.org/' href='http://www.upi.ac.cr/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.upi.ac.cr/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.upi.ac.cr/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.5" />
+<link rel='shortlink' href='http://www.upi.ac.cr/' />
+<link rel="alternate" type="application/json+oembed" href="http://www.upi.ac.cr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.upi.ac.cr%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.upi.ac.cr/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.upi.ac.cr%2F&#038;format=xml" />
+<style></style> <link rel='canonical' href='http://www.upi.ac.cr/' />
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://www.upi.ac.cr/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://www.upi.ac.cr/wp-content/plugins/js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]--><meta name="generator" content="Powered by Slider Revolution 5.2.4.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+
+
 <!--este es el fin del codigo-->
         
     <style type="text/css">
@@ -29,9 +77,7 @@
 <link rel='stylesheet' id='qode_custom_css-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/custom_css.css?ver=1479838562' type='text/css' media='all' />
 <script type='text/javascript' src='http://www.upi.ac.cr/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript' src='http://www.upi.ac.cr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='stylesheet' id='qode_font-awesome-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/font-awesome/css/font-awesome.min.css?ver=4.7.5' type='text/css' media='all' />
 
-<link rel='stylesheet' id='qode_responsive-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/responsive.min.css?ver=4.7.5' type='text/css' media='all' />
 <!--Importante fin-->
 
 <body class="page-template-default page page-id-68 page-parent  boxed select-theme-ver-3.0.2 menu-animation-underline fs-menu-animation-underline popup-menu-fade smooth_scroll wpb-js-composer js-comp-ver-4.11.2 vc_responsive">
