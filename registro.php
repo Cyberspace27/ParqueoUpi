@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <title>Parequeo UPI</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Registro UPI</title>
         
     <style type="text/css">
         img.wp-smiley,
@@ -54,14 +56,10 @@
                             <div class="main_menu_header_inner_right_holder with_center_logo">
                                 <nav class="main_menu drop_down animate_height">
                                     <ul id="menu-main" class="clearfix"><li id="nav-menu-item-22057" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-68 current_page_item active narrow"><a href="parqueoUPI.php" class=" current "><i class="menu_icon fa blank"></i><span class="menu-text">Principal</span><span class="plus"></span></a></li>
-                                    <li id="nav-menu-item-22839" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="registro.php" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Registro</span><span class="plus"></span></a>
-                                    </li>
-                                    <li id="nav-menu-item-22838" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="#" class=""><i class="menu_icon fa blank"></i><span class="menu-text">xxxxxxx</span><span class="plus"></span></a>
-                                    </li>
-                                    <li id="nav-menu-item-22060" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="#" class=""><i class="menu_icon fa blank"></i><span class="menu-text">xxxxxxxx</span><span class="plus"></span></a>
-                                    </li>
-                                    <li id="nav-menu-item-22095" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a target="_blank" href="#" class=""><i class="menu_icon fa blank"></i><span class="menu-text">xxxxxxxxx</span><span class="plus"></span></a>
-                                    </li>
+                                    <li id="nav-menu-item-22839" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="#" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Registro</span><span class="plus"></span></a></li>
+                                    <li id="nav-menu-item-22838" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="#" class=""><i class="menu_icon fa blank"></i><span class="menu-text">xxxxxxx</span><span class="plus"></span></a></li>
+                                    <li id="nav-menu-item-22060" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="#" class=""><i class="menu_icon fa blank"></i><span class="menu-text">xxxxxxxx</span><span class="plus"></span></a></li>
+                                    <li id="nav-menu-item-22095" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a target="_blank" href="#" class=""><i class="menu_icon fa blank"></i><span class="menu-text">xxxxxxxxx</span><span class="plus"></span></a></li>
                                     <li id="nav-menu-item-22104" ><a href="#"><i class="menu_icon fa blank"></i><span class="menu-text">Contáctenos</span><span class="plus"></span></a></li>
                                   </ul>        
                                 </nav>
@@ -101,7 +99,7 @@
         <div class="wpb_wrapper">
             <div class="wpb_text_column wpb_content_element ">
                 <div class="wpb_wrapper">
-                    <h1><span style="color: #1090cf;">Parqueo Universidad PI</span></h1>
+                    <h1><span style="color: #1090cf;">Registro Parqueo Universidad PI</span></h1>
 
                 </div> 
             </div> 
@@ -110,9 +108,53 @@
       </div>
     </div>
 
-        <div class="containterPrueba">
-            <img src="imagenes/ImagenPrueba.jpg">
+    <div class="containterPrueba">
+        <div class="formularioContainer">
+            <h2>Complete el siguiente formulario para Registrarse.</h2>
+            <br>
+            <form id="formulario">
+            <label>Nombre:</label>
+            <input type="text" pattern="[A-za-z\s]+" placeholder="No contiene numeros.">
+            <label title="Es requerido, no acepta números.">*</label>
+            <br>
+
+            <label>Apellidos:</label>
+            <input type="text" pattern="[A-za-z\s]+" placeholder="No contiene numeros.">
+            <label title="Es requerido ambos apellidos, no acepta números.">*</label>
+            <br>
+
+            <label>Email:</label>
+            <input type="email">
+            <br>
+
+            <label>Telefono:</label>
+            <input type="tel" name="telefono" placeholder="(Código de área) Número">
+            <label title="No acepta letras.">*</label>
+            <br>
+
+            <label>Placa Automóvil:</label>
+            <input type="text" type="number" pattern="[A-za-z\s]+">
+            <label title="Es requerido.">*</label>
+            <br>
+
+            <label>Hora de Asistencia:</label>
+            <input type="time" name="hora">
+            <br>
+
+            <label>Hora Salida:</label>
+            <input type="time" name="hora">
+            <br>
+
+            <label>Rol:</label>
+            <input type="text" pattern="[A-za-z\s]+">
+            <label title="Es requerido, no acepta números.">*</label>
+            <br>
+
+            <input type="submit" id="enviar" value="Registrar" />
+            </form>
         </div>
+        <br>
+    </div>
 
 </div>
 </div>
