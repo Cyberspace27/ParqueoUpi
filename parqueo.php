@@ -112,7 +112,7 @@
 
         <div class="containterPrueba">
             
-            <img src="imagenes/croquisV2.jpg">
+            <img src="imagenes/croquisV2_3D.jpg">
         </div>
 
 </div>
