@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
     <title>Registro UPI</title>
         
@@ -31,7 +32,7 @@
 <script type='text/javascript' src='http://www.upi.ac.cr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 
 <!--Importante fin-->
-
+</head>
 <body class="page-template-default page page-id-68 page-parent  boxed select-theme-ver-3.0.2 menu-animation-underline fs-menu-animation-underline popup-menu-fade smooth_scroll wpb-js-composer js-comp-ver-4.11.2 vc_responsive">
 
     <div class="wrapper">
@@ -55,9 +56,9 @@
                         <div class="header_menu_bottom_inner">
                             <div class="main_menu_header_inner_right_holder with_center_logo">
                                 <nav class="main_menu drop_down animate_height">
-                                    <ul id="menu-main" class="clearfix"><li id="nav-menu-item-22057" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-68 current_page_item active narrow"><a href="index.php" class=" current "><i class="menu_icon fa blank"></i><span class="menu-text">Inicio</span><span class="plus"></span></a></li>
+                                    <ul id="menu-main" class="clearfix"><li id="nav-menu-item-22057" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="index.php" class=" current "><i class="menu_icon fa blank"></i><span class="menu-text">Inicio</span><span class="plus"></span></a></li>
                                     <li id="nav-menu-item-22839" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="#" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Login</span><span class="plus"></span></a></li>
-                                    <li id="nav-menu-item-22838" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="#" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Registrarse</span><span class="plus"></span></a></li>
+                                    <li id="nav-menu-item-22838" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-68 current_page_item active narrow"><a href="#" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Registrarse</span><span class="plus"></span></a></li>
                                     <li id="nav-menu-item-22060" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="parqueo.php" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Parqueo</span><span class="plus"></span></a></li>
                                     <li id="nav-menu-item-22095" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a target="_blank" href="http://www.upi.ac.cr/" class=""><i class="menu_icon fa blank"></i><span class="menu-text">UPI</span><span class="plus"></span></a></li>
                                     <li id="nav-menu-item-22104" ><a href="#"><i class="menu_icon fa blank"></i><span class="menu-text">Ayuda</span><span class="plus"></span></a></li>
@@ -110,48 +111,68 @@
 
     <div class="containterPrueba">
         <div class="formularioContainer">
-            <h2>Complete el siguiente formulario para Registrarse.</h2>
-            <br>
-            <form id="formulario">
-            <label>Nombre:</label>
-            <input type="text" pattern="[A-za-z\s]+" placeholder="No contiene numeros.">
-            <label title="Es requerido, no acepta números.">*</label>
-            <br>
+            
+            <center>
+<h1>Complete el siguiente formulario.</h1>
 
-            <label>Apellidos:</label>
-            <input type="text" pattern="[A-za-z\s]+" placeholder="No contiene numeros.">
-            <label title="Es requerido ambos apellidos, no acepta números.">*</label>
-            <br>
+</center>
+<br />
+<div class="inner contact">
+                
+                <!-- Form Area -->
+                <div class="contact-form">
+                    <!-- Form -->
+                    <form id="contact-us" method="post" action="#">
+                        <!-- Left Inputs -->
+                        <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- Name -->
 
-            <label>Email:</label>
-            <input type="email">
-            <br>
+                            <div class="nombresContainer">
+                            <label>Nombre:</label>
+                            <input type="text" pattern="[A-za-z\s]+" name="name" id="name" required="required" class="form" placeholder="No contiene numeros" />
 
-            <label>Telefono:</label>
-            <input type="tel" name="telefono" placeholder="(Código de área) Número">
-            <label title="No acepta letras.">*</label>
-            <br>
+                            <label>Apellidos:</label>
+                            <input type="text" pattern="[A-za-z\s]+" name="name" id="apellidos" required="required" class="form" placeholder="No contiene numeros">
+                            <!-- Email -->
+                            <label>Email:</label>
+                            <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
 
-            <label>Placa Automóvil:</label>
-            <input type="text" type="number" pattern="[A-za-z\s]+">
-            <label title="Es requerido.">*</label>
-            <br>
+                            <label>Teléfono:</label>
+                            <input type="tel" name="telefono" id="telefono" required="required" class="form" placeholder="No acepta letras">
 
-            <label>Hora de Asistencia:</label>
-            <input type="time" name="hora">
-            <br>
+                            <label>Placa Automovil:</label>
+                            <input type="text" type="number" name="placa" id="placa" required="required" class="form" placeholder="Placa Automovil">
 
-            <label>Hora Salida:</label>
-            <input type="time" name="hora">
-            <br>
+                            <label>Hora de Asistencia</label>
+                            <input type="time" name="hora" id="hora" required="required" class="form" placeholder="Hora de Asistencia">
 
-            <label>Rol:</label>
-            <input type="text" pattern="[A-za-z\s]+">
-            <label title="Es requerido, no acepta números.">*</label>
-            <br>
 
-            <input type="submit" id="enviar" value="Registrar" />
-            </form>
+                            <label>Hora Salida:</label>
+                            <input type="time" name="salida" id="salida" required="required" class="form" placeholder="Hora Salida">
+
+                            <label>Rol:</label>
+                            <input type="text" pattern="[A-za-z\s]+" name="rol" id="rol" required="required" class="form" placeholder="No contiene numeros">
+                            
+                            </div>
+
+
+                        </div><!-- End Left Inputs -->
+                        <!-- Right Inputs -->
+                        <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                            
+                        </div><!-- End Right Inputs -->
+                        <!-- Bottom Submit -->
+                        <div class="relative fullwidth col-xs-12">
+                            <!-- Send Button -->
+                            <button type="submit" id="submit" name="submit" class="form-btn semibold">Registrar</button> 
+                        </div><!-- End Bottom Submit -->
+                        <!-- Clear -->
+                        <div class="clear"></div>
+                    </form>
+                    
+                </div><!-- End Contact Form Area -->
+            </div><!-- End Inner -->
+
         </div>
         <br>
     </div>
