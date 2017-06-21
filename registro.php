@@ -6,7 +6,17 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
-    <title>Registro UPI</title>
+    <title>Registro Parqueo</title>
+     <!--hojas de estilo locales y boostrap-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.upi.ac.cr/wp-content/uploads/favicon.jpg" />
+    <link rel="apple-touch-icon" href="http://www.upi.ac.cr/wp-content/uploads/favicon.jpg" />
+
+<!--libreria de fonts-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
     <style type="text/css">
         img.wp-smiley,
@@ -193,13 +203,13 @@
                         <div class="column_inner">
                             <div id="text-2" class="widget widget_text"><h4>Universidad Politécnica Internacional</h4><div class="textwidget">Sede Los Yoses: 4060-1120<div class="separator  transparent center  " style="margin-top:5px"></div>
 
-                            <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://www.facebook.com/upicr/' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><span class='social_icon social_facebook'></span></span></a></span>
+                            <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://www.facebook.com/upicr/' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><i class="fa fa-facebook" style="font-size:20px"></i></span></a></span>
 
-                            <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://twitter.com/Upolitecnicacr' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><span class='social_icon social_twitter'></span></span></a></span>
+                            <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://twitter.com/Upolitecnicacr' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><i class="fa fa-twitter" style="font-size:20px"></i></span></a></span>
 
-                            <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://instagram.com/Upolitecnicacr' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><span class='social_icon social_instagram'></span></span></a></span>
+                            <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://instagram.com/Upolitecnicacr' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><i class="fa fa-instagram" style="font-size:20px"></i></span></a></span>
 
-                            <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://www.youtube.com/channel/UC4FNgrYzbuOxFZ7PQWJGMiw' target='_self'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><span class='social_icon social_youtube'></span></span></a></span>
+                            <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://www.youtube.com/channel/UC4FNgrYzbuOxFZ7PQWJGMiw' target='_self'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><i class="fa fa-youtube-play" style="font-size:20px"></i></span></a></span>
                             <br />
                             </div>
                       </div> 
@@ -211,15 +221,16 @@
                     <div class="textwidget">Sedes Heredia y San José: 4060-1130<br />
                     <div class="separator  transparent center  " style="margin-top:5px"></div>
 
-                    <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://www.facebook.com/ipicr/' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><span class='social_icon social_facebook'></span></span></a></span>
+                    <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://www.facebook.com/ipicr/' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><i class="fa fa-facebook" style="font-size:20px"></i></span></a></span>
 
-                    <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://twitter.com/PolitecCR' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><span class='social_icon social_twitter'></span></span></a></span>
+                    <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://twitter.com/PolitecCR' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><i class="fa fa-twitter" style="font-size:20px"></i></span></a></span>
 
-                    <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://instagram.com/PolitecCR' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><span class='social_icon social_instagram'></span></span></a></span>
+                    <span class='q_social_icon_holder with_link circle_social' data-hover-background-color=#cbcbcb ><a href='https://instagram.com/PolitecCR' target='_blank'><span class='fa-stack tiny circle_social' style='color: #393939;background-color: #ffffff;border: 1px solid #ffffff;'><i class="fa fa-instagram" style="font-size:20px"></i></span></a></span>
                     </div>
                 </div>   
             </div>
         </div>
+
         <div class="qode_column column3">
             <div class="column_inner">
                 <div id="text-4" class="widget widget_text"> 
@@ -235,8 +246,8 @@
         </div>
     </div>
 </div>
-
 </footer>
+
 </div>
 </div>
 

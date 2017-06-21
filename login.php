@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <title>Mapa UPI</title>
-     <!--hojas de estilo locales y boostrap-->
+    <title>Login Parqueo</title>
+    <!--hojas de estilo locales y boostrap-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
     <link rel="shortcut icon" type="image/x-icon" href="http://www.upi.ac.cr/wp-content/uploads/favicon.jpg" />
-    <link rel="apple-touch-icon" href="http://www.upi.ac.cr/wp-content/uploads/favicon.jpg" />
+	<link rel="apple-touch-icon" href="http://www.upi.ac.cr/wp-content/uploads/favicon.jpg" />
 
-<!--libreria de fonts-->
+    <!--libreria de fonts-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -72,7 +72,7 @@
                             <div class="main_menu_header_inner_right_holder with_center_logo">
                                 <nav class="main_menu drop_down animate_height">
                                     <ul id="menu-main" class="clearfix"><li id="nav-menu-item-22057" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="index.php" class=" current "><i class="menu_icon fa blank"></i><span class="menu-text">Inicio</span><span class="plus"></span></a></li>
-                                    <li id="nav-menu-item-22839" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="login.php" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Login</span><span class="plus"></span></a></li>
+                                    <li id="nav-menu-item-22839" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="#" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Login</span><span class="plus"></span></a></li>
                                     <li id="nav-menu-item-22838" class="menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="registro.php" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Rigistrarse</span><span class="plus"></span></a></li>
                                     <li id="nav-menu-item-22060" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-68 current_page_item active narrow"><a href="parqueo.php" class=""><i class="menu_icon fa blank"></i><span class="menu-text">Parqueo</span><span class="plus"></span></a></li>
                                     <li id="nav-menu-item-22095" class="menu-item menu-item-type-custom menu-item-object-custom  narrow"><a target="_blank" href="http://www.upi.ac.cr/" class=""><i class="menu_icon fa blank"></i><span class="menu-text">UPI</span><span class="plus"></span></a></li>
@@ -89,7 +89,7 @@
                             
                         <nav class="mobile_menu">
                             <ul id="menu-main-1" class=""><li id="mobile-menu-item-22057" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="http://www.upi.ac.cr/quienes-somos/" class=""><span>Inicio</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
-                            <li id="mobile-menu-item-22839" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="login.php" class=""><span>Login</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+                            <li id="mobile-menu-item-22839" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="#" class=""><span>Login</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
                             <li id="mobile-menu-item-22838" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="registro.php" class=""><span>Rigistrarse</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
                             <li id="mobile-menu-item-22060" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="parqueo.php" class=""><span>Parqueo</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
                             <li id="mobile-menu-item-22095" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="http://nabu.cr/upolitecnica/" class=""><span>UPI</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
@@ -126,9 +126,22 @@
       </div>
     </div>
 
-        <div class="containterPrueba">
+        <div class="logIncontainer">
+            <center>
+        		<h2>Escriba su usuario y contraseña para ingresar al sistema</h2>
+                <br/><br/>
+				<form action="tempLogIn.php" method="post">
+					<b>Nombre</b>
+					<input type="text" name="nombre" required>
+					<br/><br/>
+					<b>Password</b>
+					<input type="password" name="password" required>
+                    <br/><br/>
+					<input type="submit" name="validar" value="Ingresar">
+					
+				</form>
+			 </center>           
             
-            <img id="mapaImage" src="imagenes/croquis2D_v2.jpg">
         </div>
 
 </div>
@@ -188,8 +201,6 @@
             <div class="textwidget"><span style="display: block; line-height:14px;">Powered by Team #1 UPI</span></div>
         </div>
     </div>
-
-
 </div>
 </div>
 
@@ -202,7 +213,6 @@
 <script type='text/javascript' src='http://www.upi.ac.cr/wp-content/themes/stockholm/js/default_dynamic.js?ver=1479838562'></script>
 
 <script type='text/javascript' src='http://www.upi.ac.cr/wp-content/themes/stockholm/js/default.min.js?ver=4.7.5'></script>
-
 </body>
-
 </html>
+
