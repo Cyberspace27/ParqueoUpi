@@ -96,7 +96,6 @@
                 </div>
               </div>
         </div>
-    </div>
 
     </header>
 <!-- fin del header--> 
@@ -183,9 +182,9 @@
             <div class="textwidget"><span style="display: block; line-height:14px;">Powered by Team #1 UPI</span></div>
         </div>
     </div>
-</div>
 
-</footer>
+
+
 </div>
 </div>
 
