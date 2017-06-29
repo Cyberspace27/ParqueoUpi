@@ -167,14 +167,14 @@
                             -->
 
                             <label>Rol:</label>
-                            <select class="form" name="rol" required="required">
+                            <select class="form" name="rol"  required="required">
                               <option value="">-------</option>
                               <option value="2">Estudiantes</option>
-                              <option value="3">Profesor</option>
+                              <option value="3" >Profesor</option>
                               <option value="4">Colaborador</option>
                             </select>
 
-                             <label>Apellidos:</label>
+                             <label>Contraseña:</label>
                             <input type="password" pattern="[A-za-z\s\d]+" name="password" id="password" required="required" class="form" placeholder="Password">
                             
                             </div>

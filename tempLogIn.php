@@ -159,10 +159,10 @@ if ($result->num_rows > 0 ) {
             <table class='menutable' >
                 <tr>
                     <td class='izq'><a href=\"listaUsers.php?id=".$usuarioGuardado["rol"]."\" >Listar Usuarios</a></td>
-                    <td class='der'><a href='#'>Listar Campos</a></td>
+                    <td class='der'><a href=\"listaCampos.php?id=".$usuarioGuardado["rol"]."\">Listar Campos</a></td>
                 </tr>
                 <tr>
-                    <td class='izq'><a href='#'>Editar</a></td>
+                    <td class='izq'><a href='#'>Perfil</a></td>
                     <td class='der'><a href='#'>Cerrar seccion</a></td>
                 </tr>
             </table>

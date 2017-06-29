@@ -18,27 +18,27 @@ USE `parqueoupi`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `rol`
+-- Table structure for table `espacio`
 --
 
-DROP TABLE IF EXISTS `rol`;
+DROP TABLE IF EXISTS `espacio`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `rol` (
-  `idrol` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `espacio` (
+  `idespacio` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`idrol`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+  `idseccion` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idespacio`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `rol`
+-- Dumping data for table `espacio`
 --
 
-LOCK TABLES `rol` WRITE;
-/*!40000 ALTER TABLE `rol` DISABLE KEYS */;
-INSERT INTO `rol` VALUES (1,'administrador'),(2,'Estudiante'),(3,'Profesor'),(4,'Colaborador');
-/*!40000 ALTER TABLE `rol` ENABLE KEYS */;
+LOCK TABLES `espacio` WRITE;
+/*!40000 ALTER TABLE `espacio` DISABLE KEYS */;
+/*!40000 ALTER TABLE `espacio` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-06-27  3:28:23
+-- Dump completed on 2017-06-29 13:08:00

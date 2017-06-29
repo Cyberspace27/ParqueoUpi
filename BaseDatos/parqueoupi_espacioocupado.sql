@@ -18,26 +18,27 @@ USE `parqueoupi`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `turno`
+-- Table structure for table `espacioocupado`
 --
 
-DROP TABLE IF EXISTS `turno`;
+DROP TABLE IF EXISTS `espacioocupado`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `turno` (
-  `idturno` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`idturno`)
+CREATE TABLE `espacioocupado` (
+  `idespacioOcupado` int(11) NOT NULL,
+  `idusuario` int(11) DEFAULT NULL,
+  `idturno` int(11) DEFAULT NULL,
+  PRIMARY KEY (`idespacioOcupado`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `turno`
+-- Dumping data for table `espacioocupado`
 --
 
-LOCK TABLES `turno` WRITE;
-/*!40000 ALTER TABLE `turno` DISABLE KEYS */;
-/*!40000 ALTER TABLE `turno` ENABLE KEYS */;
+LOCK TABLES `espacioocupado` WRITE;
+/*!40000 ALTER TABLE `espacioocupado` DISABLE KEYS */;
+/*!40000 ALTER TABLE `espacioocupado` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -49,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-06-27  3:28:23
+-- Dump completed on 2017-06-29 13:07:59

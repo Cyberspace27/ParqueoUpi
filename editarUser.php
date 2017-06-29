@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <title>Lista de Usuarios</title>
-    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <title>Editar Usuario</title>
      <!--hojas de estilo locales y boostrap-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -15,8 +17,6 @@
 <!--libreria de fonts-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!--este es el fin del css local-->
         
     <style type="text/css">
         img.wp-smiley,
@@ -40,14 +40,12 @@
 <link rel='stylesheet' id='qode_custom_css-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/custom_css.css?ver=1479838562' type='text/css' media='all' />
 <script type='text/javascript' src='http://www.upi.ac.cr/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript' src='http://www.upi.ac.cr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='stylesheet' id='qode_font-awesome-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/font-awesome/css/font-awesome.min.css?ver=4.7.5' type='text/css' media='all' />
 
-<link rel='stylesheet' id='qode_responsive-css'  href='http://www.upi.ac.cr/wp-content/themes/stockholm/css/responsive.min.css?ver=4.7.5' type='text/css' media='all' />
 <!--Importante fin-->
 </head>
 <body class="page-template-default page page-id-68 page-parent  boxed select-theme-ver-3.0.2 menu-animation-underline fs-menu-animation-underline popup-menu-fade smooth_scroll wpb-js-composer js-comp-ver-4.11.2 vc_responsive">
     <?php
-        if(empty($_GET["id"])){
+        if(empty($_POST["id"])){
             header("location:login.php");
             //header('Refresh: 3; URL=login.php');
             //echo "<h1 class=\"rojo\">Usted no está autorizado para ver esta página</h1>";
@@ -110,18 +108,16 @@
     </header>
 <!-- fin del header--> 
 
-
 <!-- inicio Contenido--> 
 <div class="content content_top_margin_none">
     <div class="content_inner  ">
         <div class="container">
             <div class="container_inner default_template_holder clearfix" >
-             <div class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'>
-              <div class=" full_section_inner clearfix">
+            <div class="vc_row wpb_row section vc_row-fluid " style=' text-align:left;'><div class=" full_section_inner clearfix">
         <div class="wpb_wrapper">
             <div class="wpb_text_column wpb_content_element ">
                 <div class="wpb_wrapper">
-                    <h1><span style="color: #1090cf;">Lista de Usuarios activos</span></h1>
+                    <h1><span style="color: #1090cf;">Editar Usuarios</span></h1>
 
                 </div> 
             </div> 
@@ -130,64 +126,102 @@
       </div>
     </div>
 
-        <div class="containterPrueba">
- <?php
+    <div class="containterPrueba">
+        <div class="formularioContainer">
+            
+            <center>
+<h1>Editar el siguiente formulario.</h1>
 
- require("conexionBD/datos_conexion.php");
-$listaUsers = array();
-$sql = "select * from usuario";
+</center>
+<br />
+    <div class="inner contact">
+         <!-- Form Area -->
+                <div class="contact-form">
+                    
+                <?php
+                    require("conexionBD/datos_conexion.php");
+                    
+                    $sql = "select * from usuario where idusuario='".$_POST["id"]."';";
 
-$result = $conn->query($sql);
-if ($result->num_rows > 0 ) {   
-    while($row = mysqli_fetch_assoc($result)) {
-    array_push($listaUsers, $row); 
-    }   
-} else {
-    echo "0 results";
-}
-$conn->close();
+                    $result = $conn->query($sql);
+                   
+                    if ($result->num_rows > 0 ) {       
+                        $usuarioGuardado = mysqli_fetch_array($result); 
+                        echo "<form id=\"editarUser\" method=\"post\" action=\"editarTemp.php\">
+                        <!-- Left Inputs -->
+                        <div class=\"col-xs-6 wow animated slideInLeft\" data-wow-delay=\".5s\">
+                            <!-- Name -->
 
-$val = current($listaUsers);
-    echo "<center><table border=1>";
-    echo "<tr>
-          <th>Nombre</th>
-          <th>Apellido</th>
-          <th>Email</th>
-          <th>Telefono</th>
-          <th>Direccion</th>
-          <th>rol</th>
-          <th>Editar</th>
-          
-          </tr>";
-    while($val){        
-        echo "<tr>
-            <td>".$val["nombre"]."</td>         
-            <td>".$val["apellido"]."</td>
-            <td>".$val["email"]."</td>
-            <td>".$val["telefono"]."</td>
-            <td>".$val["direccion"]."</td>
-            <td>".$val["rol"]."</td>
-            <td>
-            <form action=\"editarUser.php\" method=\"POST\">
-            <input type=\"hidden\" 
-            name=\"id\" value=\"".$val["idusuario"]."\">
-            <input type=\"submit\" value=\"editar\">
-            </form>
-            </td>
-            </tr>";
-        $val = next($listaUsers);
-    }
-    echo "</table></center>";
-    
-?>
+                            <div class=\"nombresContainer\">
+                            <label>Editar Nombre:</label>
+                            <input type=\"text\" pattern=\"[A-za-z\s]+\" name=\"nombre\" id=\"nombre\" required=\"required\" class=\"form\" placeholder=\"No contiene numeros\"  value=\"".$usuarioGuardado["nombre"]."\"/>
 
+                            <label>Editar Apellidos:</label>
+                            <input type=\"text\" pattern=\"[A-za-z\s]+\" name=\"apellido\" id=\"apellido\" required=\"required\" class=\"form\" placeholder=\"No contiene numeros\" value=\"".$usuarioGuardado["apellido"]."\">
+                            <!-- Email -->
+                            <label>Editar Email:</label>
+                            <input type=\"email\" name=\"email\" id=\"mail\" required=\"required\" class=\"form\" placeholder=\"Email\" value=\"".$usuarioGuardado["email"]."\" />
+
+
+                            <label>Editar Teléfono:</label>
+                            <input type=\"tel\" name=\"telefono\" id=\"telefono\" required=\"required\" class=\"form\" placeholder=\"No acepta letras\" value=\"".$usuarioGuardado["telefono"]."\">
+                            <label>Editar Direccion :</label>
+                            <input type=\"text\" pattern=\"[A-za-z\s]+\" name=\"direccion\" id=\"direccion\" required=\"required\" class=\"form\" placeholder=\"Direccion\" value=\"".$usuarioGuardado["direccion"]."\">
+
+                            <label>Editar Rol:</label>
+                            <select class=\"form\" name=\"rol\" required=\"required\">
+                              <option value=\"\">-------</option>
+                              <option value=\"2\">Estudiantes</option>
+                              <option value=\"3\">Profesor</option>
+                              <option value=\"4\">Colaborador</option>
+                            </select>
+
+                            <label>Editar Password</label>
+                            <input type=\"text\" pattern=\"[A-za-z\s\d]+\" name=\"password\" id=\"password\" required=\"required\" class=\"form\" placeholder=\"No contiene numeros\" value=\"".$usuarioGuardado["password"]."\">
+                       
+                            
+                            
+                            </div>
+
+                        </div><!-- End Left Inputs -->
+                        <!-- Right Inputs -->
+                        <div class=\"col-xs-6 wow animated slideInRight\" data-wow-delay=\".5s\">
+                            
+                        </div><!-- End Right Inputs -->
+                        <!-- Bottom Submit -->
+                        <div class=\"relative fullwidth col-xs-12\">
+                            <!-- Send Button -->
+
+                            <input type=\"hidden\" name=\"id\" value=\"".$_POST["id"]."\">
+                            <button type=\"submit\" id=\"submit\" name=\"submit\" class=\"form-btn semibold\">Editar</button> 
+                        </div><!-- End Bottom Submit -->
+                        <!-- Clear -->
+                        <div class=\"clear\"></div>
+                        
+                    </form>";
+                    } else {
+                        echo "<p>El usuario no se encuentra en el sistema</p>";
+                    }
+                    $conn->close();
+              
+
+
+                    
+                ?>
+
+                
+                </div><!-- End Contact Form Area -->
+            </div><!-- End Inner -->
 
         </div>
+        <br>
+    </div>
 
 </div>
 </div>
 </div>
-</div><!-- fin del Contenido--> 
+</div><!-- Fin de div content inicial--> 
+
 
   <!-- inicio Footer-->  
 <footer class="footer_border_columns">
@@ -241,7 +275,8 @@ $val = current($listaUsers);
             <div class="textwidget"><span style="display: block; line-height:14px;">Powered by Team #1 UPI</span></div>
         </div>
     </div>
-
+</div>
+</footer>
 
 </div>
 </div>
@@ -257,5 +292,4 @@ $val = current($listaUsers);
 <script type='text/javascript' src='http://www.upi.ac.cr/wp-content/themes/stockholm/js/default.min.js?ver=4.7.5'></script>
 
 </body>
-
 </html>

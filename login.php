@@ -117,7 +117,7 @@
         <div class="wpb_wrapper">
             <div class="wpb_text_column wpb_content_element ">
                 <div class="wpb_wrapper">
-                    <h1><span style="color: #1090cf;">Parqueo Universidad PI</span></h1>
+                    <h1><span style="color: #1090cf;">Ingresar al Sistema</span></h1>
 
                 </div> 
             </div> 
@@ -128,7 +128,7 @@
 
         <div class="logIncontainer">
             <center>
-        		<h2>Escriba su usuario y contraseña para ingresar al sistema</h2>
+        		<h2>Escriba su usuario y contraseña para ingresar</h2>
                 <br/><br/>
 				<form action="tempLogIn.php" method="post">
 					<b>Nombre</b>

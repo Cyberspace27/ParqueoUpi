@@ -121,7 +121,22 @@
             </div>
 
     </div> 
+
+<div class="menuInicio">
+    <center>
+    <h2 class="headerTitle">
+        Bienvenido la App de parqueo web de la Universidad PI
+    </h2>
+
+    <table class="tableMenu">
+        <tr><td class="izq"><a href="login.php">Ingresar al sistema</a></td>
+        <td class="der"><a href="registro.php">Registrarse</a></td></tr>
+    </table>
+    </center>
+    <br>
 <div class="separator separatordesktop normal   " style="margin-top:0px;margin-bottom:0px"></div>
+
+</div>
 
 
 </div>

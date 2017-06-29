@@ -35,7 +35,7 @@ CREATE TABLE `usuario` (
   `rol` int(11) DEFAULT NULL,
   PRIMARY KEY (`idusuario`),
   UNIQUE KEY `email_UNIQUE` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +44,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Elias','Arias','elias@mail.com','edar','86564412','Alajuela',1),(2,'Carlos','Perez','carlinhos@mail.com','carlospz','86451109','Cartago',2),(5,'Pamela','Herenandez','pamehz@mail.com','pamelachu','84441126','San Jose',2),(7,'ariel','','','','4242424','tamarindo',2),(9,'Jesus','Calderon','jesus@cd.com','naruto','342','tamarindo',2);
+INSERT INTO `usuario` VALUES (1,'Elias','Arias','elias@mail.com','edar','86564412','Alajuela',1),(2,'Carlos','Perez','carlinhos@mail.com','carlospz','86451109','Cartago',2),(5,'Pamela','Herenandez','pamehz@mail.com','pamelachu','84441126','San Jose',2),(7,'ariel','villa','htoa@jkg.com','naruto11','43534','tamarindo',2),(9,'Jesus','Calderon','jesus@cd.com','naruto','342','tamarindo',2),(10,'ariel','villa','can@hoy.com','naruto','4242424','tamarindo',2);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-06-27  3:28:23
+-- Dump completed on 2017-06-29 13:08:00
